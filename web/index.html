@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DILPREET OS - Neural Interface v3.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+
+<body>
+    <div class="video-bg"></div>
+
+    <main class="container" id="main-container">
+        <!-- Ultra-High End Header -->
+        <header class="hud-header">
+            <div class="system-tag">DILPREET'S NEURAL INTERFACE // MARK III</div>
+
+            <div class="central-clock-box">
+                <div class="system-time" id="clock">00:00:00</div>
+            </div>
+
+            <div class="mic-status" id="mic-indicator">
+                <div class="pulse-ring"></div>
+                <span id="mic-text">DILPREET SECURE LINK</span>
+            </div>
+        </header>
+
+        <!-- Main Dynamic Interface -->
+        <div class="main-interface">
+            <!-- Left Bio-Sync Panel -->
+            <aside class="panel left-panel">
+                <div class="system-card">
+                    <div class="card-line">OWNER: <span>DILPREET SINGH</span></div>
+                    <div class="card-line">SYSTEM: <span>DILPREET OS v3.0</span></div>
+                    <div class="card-line">STATUS: <span class="pulse-text">ACTIVE</span></div>
+                </div>
+                <div class="panel-header">HARDWARE VITALS</div>
+
+                <div class="stat-box">
+                    <label>NEURAL LOAD (CPU)</label>
+                    <div class="progress-bar">
+                        <div id="cpu-bar" style="width: 0%;"></div>
+                    </div>
+                    <span id="cpu-val">0%</span>
+                </div>
+
+                <div class="stat-box">
+                    <label>VOLATILE SYNC (RAM)</label>
+                    <div class="progress-bar">
+                        <div id="ram-bar" style="width: 0%;"></div>
+                    </div>
+                    <span id="ram-val">0%</span>
+                </div>
+
+                <div class="stat-box">
+                    <label>CELLULAR ENERGY</label>
+                    <div class="progress-bar">
+                        <div id="bat-bar" style="width: 0%;"></div>
+                    </div>
+                    <span id="bat-val">0%</span>
+                </div>
+            </aside>
+
+            <!-- Cinematic Central Core -->
+            <section class="central-core">
+                <!-- Main AI Orb -->
+                <div class="orb-container" id="jarvis-orb">
+                    <div class="orb-outer"></div>
+                    <div class="orb-middle"></div>
+                    <div class="orb-inner"></div>
+                </div>
+
+                <!-- Integrated Security HUD -->
+                <div id="security-overlay" class="security-screen hidden">
+                    <div class="scanner-header">BIOMETRIC AUTHORIZATION ACTIVE</div>
+                    <div class="scanner-container">
+                        <canvas id="scan-canvas"></canvas>
+                        <div class="scan-line"></div>
+                        <div class="target-brackets"></div>
+                    </div>
+                    <div class="scan-status" id="scan-status-text">ANALYZING GEOMETRY...</div>
+                </div>
+
+                <div class="status-text" id="status-display">INITIALIZING...</div>
+
+                <!-- Live Audio Visualizer -->
+                <div class="visualizer-container" id="visualizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Holographic Terminal -->
+                <div class="live-terminal">
+                    <div class="terminal-header">
+                        <span>NEURAL PROCESSOR LOGS</span>
+                        <span id="stream-status">ENCRYPTED</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-output">
+                        <p class="term-line">System boot: Success</p>
+                        <p class="term-line">Uplink established: Secure</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Activity Panel -->
+            <aside class="panel right-panel">
+                <div class="panel-header">NEURAL LENS (LIVE FEED)</div>
+                <div class="camera-panel">
+                    <img id="camera-stream" src="" alt="Neural Lens Offline">
+                    <div class="lens-overlay">
+                        <div class="lens-corner top-left"></div>
+                        <div class="lens-corner top-right"></div>
+                        <div class="lens-corner bottom-left"></div>
+                        <div class="lens-corner bottom-right"></div>
+                        <div class="gesture-indicator" id="gesture-label">AWAITING SCAN...</div>
+                    </div>
+                </div>
+
+                <div class="panel-header">ACTION REPOSITORY</div>
+                <div class="log-container" id="log-list">
+                    <p class="log-entry">Uplink initialized...</p>
+                    <p class="log-entry">Awaiting voice trigger...</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Command Command HUD -->
+        <footer class="hud-footer">
+            <div class="command-input" id="last-command-text">AWAITING WAKE WORD</div>
+        </footer>
+    </main>
+
+    <div id="notification-area" class="notification-container"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+# Environment and Secrets
+.env
+.venv/
+__pycache__/
+
+# Python build/dist
+dist/
+build/
+*.egg-info/
+
+# Media and Snapshots
+*.jpg
+*.mp3
+
+# Machine Learning Models (Too large for Git)
+*.xml
+*.task
+*.tflite
+*.json
+
+# Logs and Temp files
+*.txt
+security_logs/
