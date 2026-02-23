@@ -8,6 +8,16 @@ dist/
 build/
 *.egg-info/
 
+# Privacy: Personal Media and Face Data
+*.jpg
+*.png
+!preview.png
+user_face_model.xml
+user_face_signature.json
+face_data.xml
+
+
 # Logs and Temp files
 security_logs/
+
 
