@@ -2,7 +2,7 @@
 
 Welcome to **JARVIS Prototype 2**, a high-end, voice-activated AI assistant designed with a futuristic sci-fi HUD. This project integrates multiple AI brains, facial recognition security, and real-time hardware monitoring.
 
-![Aesthetic Preview](preview_placeholder.jpg) *(Add a screenshot of your HUD here!)*
+![Aesthetic Preview](preview.png)
 
 ## ✨ Key Features
 - **Dual-Brain Logic**: Real-time switching between **Google Gemini 2.0** and **Groq (Llama 3)**.
